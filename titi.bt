@@ -8,7 +8,21 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {
+          "statusCondition": "failsIfAnyFails",
+          "retryPolicy": "propagateToRunning"
+        },
+        "children": [],
+        "id": "79672a4d-72c3-4c33-87db-534d44200642",
+        "type": "parallel"
+      }
+    ],
     "id": "896895e9-bc7f-4de5-aec1-14238ae94c12"
   }
 ]
