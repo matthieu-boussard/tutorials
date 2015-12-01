@@ -18,7 +18,24 @@
           "statusCondition": "failsIfAnyFails",
           "retryPolicy": "propagateToRunning"
         },
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "behavior": {
+                "type": "uriPath",
+                "value": ""
+              },
+              "inputParams": []
+            },
+            "children": [],
+            "id": "efbeb822-0445-4f59-bab6-1609b670ea50",
+            "type": "embedded"
+          }
+        ],
         "id": "79672a4d-72c3-4c33-87db-534d44200642",
         "type": "parallel"
       }
