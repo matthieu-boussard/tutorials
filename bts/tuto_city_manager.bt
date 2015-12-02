@@ -1,6 +1,6 @@
 [
   {
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   {
     "metadata": {
@@ -32,6 +32,26 @@
             "children": [],
             "id": "c6d83c2b-c5d4-42fc-a244-d8911e161f6a",
             "type": "subscribeMessage"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Debug",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "creation"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "f42d7a24-528d-449c-8677-ab89b2e10d33",
+            "type": "action"
           },
           {
             "activated": true,
@@ -68,6 +88,26 @@
                     "children": [],
                     "id": "ebda6634-27e5-4034-9ac2-771b3478e50d",
                     "type": "receiveMessage"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Debug",
+                      "inputParams": [
+                        {
+                          "key": "message",
+                          "type": "string",
+                          "value": "before get capitals"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "3a50147f-0ed8-480d-9149-d272356a0400",
+                    "type": "action"
                   },
                   {
                     "activated": true,
@@ -120,6 +160,26 @@
                         },
                         "properties": {},
                         "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Debug",
+                              "inputParams": [
+                                {
+                                  "key": "message",
+                                  "type": "string",
+                                  "value": "before get first elem"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "ac30f0a0-3de0-4059-bd7d-163b40a6779c",
+                            "type": "action"
+                          },
                           {
                             "activated": true,
                             "metadata": {
@@ -239,6 +299,26 @@
                             ],
                             "id": "dff82afc-3517-4578-a97e-b49129010d7b",
                             "type": "parallel"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "Debug",
+                              "inputParams": [
+                                {
+                                  "key": "message",
+                                  "type": "string",
+                                  "value": "finished"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "cf00a056-f6e6-433c-a916-69e8bcf6880d",
+                            "type": "action"
                           }
                         ],
                         "id": "24c64d18-040f-4e29-aec5-f36be66f75cf",
