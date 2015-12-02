@@ -218,6 +218,26 @@
                               "label": ""
                             },
                             "properties": {
+                              "name": "Debug",
+                              "inputParams": [
+                                {
+                                  "key": "message",
+                                  "type": "string",
+                                  "value": "just after get first elem"
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "6069b994-23e6-46b5-b1b5-370e1a0fcf83",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
                               "name": "GetCityWeather",
                               "inputParams": [
                                 {
