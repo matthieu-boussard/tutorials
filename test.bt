@@ -22,22 +22,80 @@
               "label": ""
             },
             "properties": {
-              "op1": {
+              "statusCondition": "succeedsIfAnySucceeds",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "wait",
+                  "inputParams": [
+                    {
+                      "key": "time",
+                      "type": "string",
+                      "value": "2"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "4c2c502c-ebfe-4f01-be9d-61e45529343a",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "stall",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "bc13fb35-47aa-47ac-84e8-7c82ea34e2a7",
+                "type": "action"
+              }
+            ],
+            "id": "172c4e7d-29f6-4521-b2a7-2887dc3cd69a",
+            "type": "parallel"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "finished",
+              "op": {
                 "type": "boolean",
                 "value": "true"
-              },
-              "op2": {
-                "type": "boolean",
-                "value": "true"
-              },
-              "op": "=="
+              }
             },
             "children": [],
-            "id": "8df3d978-b4d4-4d22-a638-cc2ed341b223",
-            "type": "condition"
+            "id": "a41bfad1-f3c9-4e38-b5a9-17c5e2d37541",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "stall",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "6a85aab8-6011-40a9-9447-7a0e95aef86d",
+            "type": "action"
           }
         ],
-        "id": "39c8bb35-9f48-430d-99a9-0cfa83bccb3c",
+        "id": "58010f0f-3795-4b83-a854-cb052d12bcda",
         "type": "sequence"
       }
     ],
