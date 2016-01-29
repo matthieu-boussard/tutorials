@@ -15,7 +15,7 @@
           "label": ""
         },
         "properties": {
-          "name": "doesn't exist",
+          "name": "invalidActionName",
           "inputParams": [],
           "outputParams": []
         },
