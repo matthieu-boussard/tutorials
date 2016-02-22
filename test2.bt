@@ -1,0 +1,104 @@
+[
+  {
+    "version": "1.2.0"
+  },
+  {
+    "activated": true,
+    "metadata": {
+      "label": ""
+    },
+    "properties": {},
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "succeedsIfAnySucceeds",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "wait",
+                  "inputParams": [
+                    {
+                      "key": "time",
+                      "type": "string",
+                      "value": "2"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "4c2c502c-ebfe-4f01-be9d-61e45529443a",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "stall",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "bc13fc35-47aa-47ac-84e8-7c82ea34e2a7",
+                "type": "action"
+              }
+            ],
+            "id": "172c427d-29f6-4522-b2a7-2887dc3cd69a",
+            "type": "parallel"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "finished",
+              "op": {
+                "type": "boolean",
+                "value": "true"
+              }
+            },
+            "children": [],
+            "id": "a41bfad1-f3c9-4e38-b5a9-17c5e2d38641",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "stall",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "6a85aac9-6011-40a9-9447-7a0e95aef86d",
+            "type": "action"
+          }
+        ],
+        "id": "58010f0f-37a6-4b83-a854-cb052d12bcda",
+        "type": "sequence"
+      }
+    ],
+    "id": "f96a9ed0-444e-4f22-0b81-938514e359ec"
+  }
+]
